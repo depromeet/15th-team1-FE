@@ -13,6 +13,7 @@ import { CreateDonePage } from "@/app/space/CreateDonePage";
 import { CreateNextPage } from "@/app/space/CreateNextPage";
 import { CreateSpacePage } from "@/app/space/CreateSpacePage";
 import { JoinSpacePage } from "@/app/space/JoinSpacePage";
+import { TemplatePage } from "@/app/template/TemplatePage.tsx";
 import Staging from "@/app/test/Staging.tsx";
 import { RetrospectWriteCompletePage } from "@/app/write/RetrospectWriteCompletePage.tsx";
 import { RetrospectWritePage } from "@/app/write/RetrospectWritePage.tsx";
@@ -54,6 +55,11 @@ const routerChildren: RouteChildren[] = [
     path: "/write/complete",
     element: <RetrospectWriteCompletePage />,
     auth: true,
+  },
+  {
+    path: "/template",
+    element: <TemplatePage />,
+    auth: false,
   },
   {
     path: "/staging",
